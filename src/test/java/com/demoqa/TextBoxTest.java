@@ -28,7 +28,7 @@ public class TextBoxTest {
       $("#firstName").setValue("Kos");
       $("#lastName").setValue("Kosov");
       $("#userEmail").setValue("Kosov@mail.ru");
-      $(byText("Male")).click();
+      $("#genterWrapper").$(byText("Male")).click();
       //$("[for='gender-radio-1']").click();
       $("#userNumber").setValue("7777934256");
       $("#dateOfBirthInput").click();
@@ -36,7 +36,7 @@ public class TextBoxTest {
       $(".react-datepicker__year-select").selectOption("1992");
       $(".react-datepicker__day--018").click();
       $("#subjectsInput").setValue("Maths").pressEnter();
-      $(byText("Sports")).click();
+      $("#hobbiesWrapper").$(byText("Sports")).click();
       //$("[for='hobbies-checkbox-1']").click();
       $("#uploadPicture").uploadFromClasspath("fOwl.PNG");
       //$("#uploadPicture").uploadFile(new File("src/test/resources/fOwl.PNG"));
