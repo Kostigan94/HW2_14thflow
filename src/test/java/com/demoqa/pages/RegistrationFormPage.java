@@ -1,11 +1,9 @@
 package com.demoqa.pages;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import com.demoqa.pages.components.AddressComponent;
 import com.demoqa.pages.components.CalendarComponent;
 import com.demoqa.pages.components.ResultModal;
-
 import org.junit.jupiter.api.BeforeAll;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -60,7 +58,7 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage setBirthdate(String day, String month, String year) {
+    public RegistrationFormPage setBirthDate(String day, String month, String year) {
         $("#dateOfBirthInput").scrollIntoView(true).click();
         calendarComponent.setDate(day, month, year);
 
@@ -79,7 +77,7 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage setHobby(String value) {
+    public RegistrationFormPage setHobbies(String value) {
         $("#hobbiesWrapper").$(byText(value)).click();
 
         return this;
