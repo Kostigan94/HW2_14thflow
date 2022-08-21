@@ -22,12 +22,12 @@ String firstName,lastName,userEmail,userNumber,
                 userEmail = faker.internet().emailAddress();
                 gender = "Male";
                 userNumber = faker.phoneNumber().subscriberNumber(10);
-                day = faker.number().numberBetween(1, 30) + "";
+                day = faker.number().numberBetween(1,27) + "";
                 month = "July";
                 year = faker.number().numberBetween(1990, 2000) + "";
                 subject = "Math";
                 hobbies = "Sports";
-                picture = "src/test/resources/fOwl.PNG";
+                picture = "fOwl.PNG";
                 currentAddress = faker.address().fullAddress();
                 state = "Rajasthan";
                 city = "Jaipur";
