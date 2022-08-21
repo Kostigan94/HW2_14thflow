@@ -10,9 +10,9 @@ public class TestData {
      Faker faker = new Faker();
 
 String firstName,lastName,userEmail,userNumber,
-        day,month,year,subject,hobbies,picture,
+        day,month,year,subject,hobbies,uploadPicture,
         currentAddress,state,
-        city,fullName,getPicture,
+        city,fullName,
         dateOfBirth,stateAndCity,
             gender;
     @BeforeEach
@@ -27,13 +27,11 @@ String firstName,lastName,userEmail,userNumber,
                 year = faker.number().numberBetween(1990, 2000) + "";
                 subject = "Math";
                 hobbies = "Sports";
-                picture = "fOwl.PNG";
+                uploadPicture = "fOwl.PNG";
                 currentAddress = faker.address().fullAddress();
                 state = "Rajasthan";
                 city = "Jaipur";
-                fullName = format("%s %s", firstName, lastName);
-                getPicture = "fOwl.PNG";
-                dateOfBirth = format("%s %s,%s", day, month, year);
+                fullName = format("%s %s", firstName, lastName);dateOfBirth = format("%s %s,%s", day, month, year);
                 stateAndCity = format("%s %s", state, city);
 
     }

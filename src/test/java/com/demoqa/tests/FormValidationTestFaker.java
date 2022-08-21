@@ -26,7 +26,7 @@ public class FormValidationTestFaker extends TestBase {
                 .setBirthDate(testdata.day,testdata. month, testdata.year)
                 .setSubject(testdata.subject)
                 .setHobbies(testdata.hobbies)
-                .uploadPicture(testdata.picture)
+                .uploadPicture(testdata.uploadPicture)
                 .setAddress(testdata.currentAddress)
                 .setCityState(testdata.state, testdata.city)
                 .submit();
@@ -40,7 +40,7 @@ public class FormValidationTestFaker extends TestBase {
                 .checkResult("Date of Birth",testdata.dateOfBirth)
                 .checkResult("Subjects",testdata.subject)
                 .checkResult("Hobbies",testdata.hobbies)
-                .checkResult("Picture", testdata.getPicture)
+                .checkResult("Picture", testdata.uploadPicture)
                 .checkResult("Address", testdata.currentAddress)
                 .checkResult("State and City",testdata.stateAndCity);
 
